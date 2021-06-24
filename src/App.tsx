@@ -1,15 +1,14 @@
 import React from 'react';
-import classes from './App.module.scss';
+import AdminPanel from './admin/AdminPanel'
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from './routing/AppRouter'
+import Navigation from './admin/Navigation'
 
 function App() {
   return (
-    <div className={classes.App}>
-      <header className={classes["App-header"]}>
-        <p>
-          learn react
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AdminPanel content={<AppRouter/>} navMenu={<Navigation/>} />
+    </BrowserRouter>
   );
 }
 
