@@ -8,8 +8,8 @@ const navItems = [
   <Link to='/configs'><span className='w-10 inline-block'><FontAwesomeIcon icon={faCogs} /></span>App configs</Link>
 ]
 
-const navList = navItems.map(item => (
-  <li className='font-sans text-white flex flex-col md:flex-row py-1'>{ item }</li>
+const navList = navItems.map((item, index) => (
+  <li className='font-sans text-white flex flex-col md:flex-row py-1' key={index}>{ item }</li>
 ))
 
 const Navigation = () => {
