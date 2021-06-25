@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import AppConfig from '../pages/AppConfig'
-import WhetherChecker from '../pages/WhetherChecker'
+import AppConfig from '../pages/app-config/AppConfig'
+import WeatherChecker from '../pages/weather-checker/WeatherChecker'
 
 const AppRouter = () => {
 
@@ -11,7 +11,7 @@ const AppRouter = () => {
         <AppConfig />
       </Route>
       <Route path="/" exact>
-        <WhetherChecker />
+        <WeatherChecker />
       </Route>
     </Switch>
   )

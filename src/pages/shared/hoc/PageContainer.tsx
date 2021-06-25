@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
 
 interface PageContainerProps {
-  children: ReactElement;
+  children: ReactNode;
 }
 
 const PageContainer = (props: PageContainerProps) => {
